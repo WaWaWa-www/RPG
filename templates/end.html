@@ -1,0 +1,19 @@
+<!-- templates/end.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/end.css') }}">
+    <title>RPG Game - END</title>
+</head>
+<body>
+    <div class="center">
+        <h1>RPG Game</h1>
+        <div class="end-message-box">
+            <p>{{ end_message }}</p>
+        </div>
+        <a href="{{ url_for('top') }}"><button>Return to TOP</button></a>
+    </div>
+</body>
+</html>
