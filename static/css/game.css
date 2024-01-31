@@ -27,7 +27,7 @@ body {
 }
 
 .window {
-	background-image: url(../static/haikei.jpg);
+	background-image: url(../images/haikei.jpg);
 	background-size: cover;
 	width: 770px;
 	height: 500px;
@@ -50,8 +50,8 @@ body {
 
 img {
 	position: absolute;
-	margin-left: 130px;
-	margin-top: 100px;
+	margin-left: 220px;
+	margin-top: -400px;
 	width: 400px;
 	height: 400px;
 }
@@ -88,6 +88,11 @@ img {
 	text-align: center;
 	height: 110px;
 }
+
+.player1 {
+	margin-top: 20px;
+}
+
 
 .player2 {
 	margin-top: 20px;

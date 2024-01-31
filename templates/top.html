@@ -1,16 +1,23 @@
-<!-- templates/top.html -->
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPGゲーム</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/top.css') }}">
-    <title>RPG Game - TOP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Yomogi&family=Zen+Kurenaido&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="center">
-        <h1>RPG Game</h1>
-        <a href="{{ url_for('battle') }}"><button>START</button></a>
+    <div class="main">
+        <div class="box">
+            <h1>RPGゲーム</h1>
+            <a href="{{ url_for('battle') }}"><button>START</button></a>
+        </div>
     </div>
 </body>
+
 </html>

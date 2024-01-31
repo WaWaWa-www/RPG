@@ -1,19 +1,28 @@
-<!-- templates/end.html -->
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/end.css') }}">
-    <title>RPG Game - END</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>エンド画面</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/end.css') }}">
+  <link rel="stylesheet" href="end.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Yomogi&family=Zen+Kurenaido&family=Zen+Old+Mincho&display=swap"
+    rel="stylesheet">
 </head>
+
+
 <body>
-    <div class="center">
-        <h1>RPG Game</h1>
-        <div class="end-message-box">
-            <p>{{ end_message }}</p>
-        </div>
+  <div class="main">
+    <div class="box">
+      <h1>ゲーム終了</h1>
+        <p>Endテキストがここに入る</p>
         <a href="{{ url_for('top') }}"><button>Return to TOP</button></a>
     </div>
+  </div>
 </body>
+
 </html>

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPG Game - BATTLE</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='game.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Yomogi&family=Zen+Kurenaido&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
                     <div class="monster_hp"></div>
                 </div>
             </div>
-            <img src="{{ url_for('static', filename='monster.png') }}" alt="monster">
+            <img src="{{ url_for('static', filename='images/monster.png') }}" alt="monster">
             <div class="text">{{ message }}</div>
         </div>
         <div class="rightwindow">
@@ -33,6 +33,66 @@
                         <tr>
                             <th>name:</th>
                             <td>勇者</td>
+                        </tr>
+                        <tr>
+                            <th>HP:</th>
+                            <td>{{ hero_hp }}</td>
+                        </tr>
+                        <tr>
+                            <th>MP:</th>
+                            <td>{{ hero_mp }}</td>
+                        </tr>
+                        <tr>
+                            <th>Skill:</th>
+                            <td>{{ hero.skill.name }} ({{ hero.skill.mp_cost }} MP)</td>
+                        </tr>
+                    </tbody>
+				</table>
+				<table class="player player2">
+					<tbody>
+                        <tr>
+                            <th>name:</th>
+                            <td>剣士</td>
+                        </tr>
+                        <tr>
+                            <th>HP:</th>
+                            <td>{{ hero_hp }}</td>
+                        </tr>
+                        <tr>
+                            <th>MP:</th>
+                            <td>{{ hero_mp }}</td>
+                        </tr>
+                        <tr>
+                            <th>Skill:</th>
+                            <td>{{ hero.skill.name }} ({{ hero.skill.mp_cost }} MP)</td>
+                        </tr>
+                    </tbody>
+				</table>
+				<table class="player player1">
+					<tbody>
+                        <tr>
+                            <th>name:</th>
+                            <td>魔法使い</td>
+                        </tr>
+                        <tr>
+                            <th>HP:</th>
+                            <td>{{ hero_hp }}</td>
+                        </tr>
+                        <tr>
+                            <th>MP:</th>
+                            <td>{{ hero_mp }}</td>
+                        </tr>
+                        <tr>
+                            <th>Skill:</th>
+                            <td>{{ hero.skill.name }} ({{ hero.skill.mp_cost }} MP)</td>
+                        </tr>
+                    </tbody>
+				</table>
+				<table class="player player1">
+					<tbody>
+                        <tr>
+                            <th>name:</th>
+                            <td>僧侶</td>
                         </tr>
                         <tr>
                             <th>HP:</th>
